@@ -4,7 +4,7 @@ import axios from 'axios';
 import './App.css';
 import { colors } from './colors';
 
-const BACKEND_URL = 'http://localhost:7777' || process.env.REACT_APP_BACKEND_URL;
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:7777';
 console.log('Using backend URL:', BACKEND_URL);
 
 function App() {
